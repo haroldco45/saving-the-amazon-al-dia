@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Saving The Amazon al Día · Vibras Positivas HM</title>
+<meta name="description" content="Seguimiento día a día a Saving The Amazon: siembras, cifras, noticias, Instagram y la Ley 2173. Hecho por Vibras Positivas HM.">
+<meta name="theme-color" content="#0d3b23">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<!-- Vista previa al compartir el enlace (foto real de la comunidad Tayazú, Vaupés) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vibras Positivas HM">
+<meta property="og:title" content="Saving The Amazon al Día">
+<meta property="og:description" content="Árboles sembrados, comunidades, noticias de hoy y la Ley 2173 en un solo lugar. Seguimiento ciudadano hecho en Caucasia.">
+<meta property="og:image" content="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_1.png">
+<meta property="og:image:alt" content="Siembra con la comunidad indígena Tayazú en el Vaupés">
+<meta property="og:url" content="https://saving-the-amazon-al-dia.netlify.app/">
+<meta property="og:locale" content="es_CO">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Saving The Amazon al Día">
+<meta name="twitter:description" content="Seguimiento día a día a la ONG que restaura la Amazonía y los manglares con sus comunidades.">
+<meta name="twitter:image" content="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --selva:#0d3b23; --hoja:#1f7a3f; --brote:#7bc043; --lima:#c8e86b; --rio:#0f5c6e;
+  --tierra:#a8652a; --crema:#f6f3ea; --tinta:#14231a; --gris:#5c6b61; --blanco:#fff;
+  --r:18px; --sombra:0 10px 30px rgba(13,59,35,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.55;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+
+/* Barra superior */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:rgba(13,59,35,.82);backdrop-filter:blur(10px);color:#fff}
+.top .marca{font-weight:800;letter-spacing:.02em;font-size:.95rem;text-decoration:none}
+.top .marca small{display:block;font-weight:500;font-size:.68rem;opacity:.8}
+.top .acciones{display:flex;gap:8px}
+.btn{border:0;cursor:pointer;font:700 .85rem Inter,sans-serif;border-radius:999px;padding:10px 16px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.96)}
+.btn-lima{background:var(--lima);color:var(--selva)}
+.btn-borde{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7)}
+.btn-selva{background:var(--selva);color:#fff}
+.btn-hoja{background:var(--hoja);color:#fff}
+.girando{animation:gira 1s linear infinite}
+@keyframes gira{50%{opacity:.5}}
+
+/* Portada con video real */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,59,35,.15) 0%,rgba(13,59,35,.55) 55%,rgba(13,59,35,.95) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:48px;padding-top:110px}
+.chip{display:inline-block;background:rgba(200,232,107,.18);border:1px solid var(--lima);color:var(--lima);font-weight:700;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.hero h1{font-size:clamp(2.3rem,7vw,4.6rem);margin:14px 0 10px;font-weight:800}
+.hero h1 span{color:var(--lima)}
+.hero p.lead{font-size:clamp(1rem,2.4vw,1.25rem);max-width:640px;opacity:.95}
+.hero .fila{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.vivo{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;margin-top:18px;opacity:.9}
+.vivo i{width:9px;height:9px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.7);animation:late 1.6s infinite}
+@keyframes late{70%{box-shadow:0 0 0 10px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
+
+/* Cinta en movimiento */
+.cinta{background:var(--selva);color:var(--lima);overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:700;font-size:.9rem}
+.cinta div{display:inline-block;animation:corre 38s linear infinite;padding-left:100%}
+.cinta b{color:#fff;margin:0 26px}
+@keyframes corre{to{transform:translateX(-100%)}}
+
+section{padding:64px 0}
+.titulo{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.titulo h2{font-size:clamp(1.7rem,4.5vw,2.6rem);color:var(--selva)}
+.titulo p{color:var(--gris);max-width:560px}
+.kicker{font-weight:800;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hoja);margin-bottom:6px}
+
+/* Hoy */
+#hoy{background:linear-gradient(135deg,#fff 0%,#eef6e2 100%)}
+.fecha-hoy{font-family:Fraunces,serif;font-size:1.1rem;color:var(--rio)}
+.hoy-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.nota{background:#fff;border-radius:var(--r);box-shadow:var(--sombra);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;transition:transform .2s}
+.nota:hover{transform:translateY(-4px)}
+.nota .foto{aspect-ratio:16/9;background-size:cover;background-position:center}
+.nota .cuerpo{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.nota .meta{font-size:.75rem;color:var(--gris);display:flex;justify-content:space-between;gap:8px}
+.nota h3{font-family:Inter,sans-serif;font-size:1rem;font-weight:700;line-height:1.35}
+.nueva{background:var(--brote);color:#fff;font-weight:800;font-size:.68rem;padding:3px 8px;border-radius:999px;text-transform:uppercase}
+.vacio{background:#fff;border:2px dashed #cfe0c2;border-radius:var(--r);padding:22px;color:var(--gris)}
+.estado{font-size:.8rem;color:var(--gris);margin-top:12px}
+
+/* Cifras */
+#cifras{background:var(--selva);color:#fff;position:relative;overflow:hidden}
+#cifras .titulo h2{color:#fff}
+#cifras .titulo p{color:#cfe3cf}
+.cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.cifra{background:rgba(255,255,255,.07);border:1px solid rgba(200,232,107,.25);border-radius:var(--r);padding:20px}
+.cifra strong{display:block;font-family:Fraunces,serif;font-size:clamp(1.8rem,5vw,2.6rem);color:var(--lima)}
+.cifra span{font-size:.85rem;opacity:.9}
+.meta-millon{margin-top:26px}
+.barra{height:18px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden;margin:10px 0 6px}
+.barra i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brote),var(--lima));border-radius:999px;transition:width 2.4s cubic-bezier(.2,.8,.2,1)}
+.fuente{font-size:.75rem;opacity:.75;margin-top:10px}
+
+/* Noticias */
+.buscador{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.buscador input{flex:1;min-width:220px;padding:13px 16px;border-radius:999px;border:2px solid #d9e6cf;font:500 1rem Inter,sans-serif;background:#fff}
+.buscador input:focus{outline:none;border-color:var(--hoja)}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.filtro{background:#fff;border:1.5px solid #d9e6cf;color:var(--selva);padding:8px 14px;border-radius:999px;font:600 .82rem Inter;cursor:pointer}
+.filtro.on{background:var(--hoja);color:#fff;border-color:var(--hoja)}
+.lista{display:flex;flex-direction:column;gap:10px}
+.item{display:grid;grid-template-columns:110px 1fr;gap:14px;background:#fff;border-radius:14px;padding:10px;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.05);transition:background .2s}
+.item:hover{background:#f3f9ec}
+.item .mini{border-radius:10px;background-size:cover;background-position:center;min-height:76px}
+.item h3{font-family:Inter;font-size:.95rem;font-weight:700;line-height:1.35}
+.item .meta{font-size:.74rem;color:var(--gris);margin-top:4px}
+.mas{margin-top:14px}
+
+/* Instagram */
+#instagram{background:#fff}
+.ig{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center}
+.ig-perfil{background:linear-gradient(140deg,#0d3b23,#1f7a3f 60%,#7bc043);color:#fff;border-radius:24px;padding:26px;box-shadow:var(--sombra)}
+.ig-perfil h3{font-size:1.6rem}
+.ig-perfil .handle{opacity:.85;font-weight:600}
+.ig-nums{display:flex;gap:22px;margin:18px 0}
+.ig-nums b{display:block;font-family:Fraunces,serif;font-size:1.7rem;color:var(--lima)}
+.ig-nums small{opacity:.85}
+.destacadas{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 20px}
+.destacadas span{background:rgba(255,255,255,.14);padding:7px 12px;border-radius:999px;font-size:.8rem;font-weight:600}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.reel{aspect-ratio:9/14;border-radius:14px;background-size:cover;background-position:center;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:10px;color:#fff;font-weight:800;font-size:.8rem;text-decoration:none}
+.reel::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.75))}
+.reel span{position:relative}
+
+/* Galería */
+.galeria{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:10px}
+.galeria figure{position:relative;border-radius:16px;overflow:hidden;background:#cfe0c2}
+.galeria figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.galeria figure:hover img{transform:scale(1.07)}
+.galeria figcaption{position:absolute;left:10px;bottom:10px;background:rgba(13,59,35,.8);color:#fff;font-size:.75rem;font-weight:700;padding:5px 10px;border-radius:999px}
+.g1{grid-column:span 3;grid-row:span 2}.g2{grid-column:span 3}.g3{grid-column:span 3}.g4{grid-column:span 2}.g5{grid-column:span 2}.g6{grid-column:span 2}
+.territorios{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.territorios span{background:var(--selva);color:var(--lima);padding:8px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
+
+/* Videos */
+#videos{background:var(--rio);color:#fff}
+#videos .titulo h2{color:#fff}#videos .titulo p{color:#d8eef2}
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.videos figure{border-radius:20px;overflow:hidden;background:#000;box-shadow:var(--sombra)}
+.videos video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.videos figcaption{padding:12px 16px;font-weight:700;background:rgba(0,0,0,.35)}
+
+/* Ley 2173 */
+#ley{background:linear-gradient(180deg,#f6f3ea,#eaf2df)}
+.ley-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:28px}
+.tarjeta{background:#fff;border-radius:var(--r);padding:20px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-top:5px solid var(--brote)}
+.tarjeta h3{font-family:Inter;font-size:1.05rem;margin-bottom:6px;color:var(--selva)}
+.tarjeta p{font-size:.92rem;color:#2c3a31}
+.cumple{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:start;background:var(--selva);color:#fff;border-radius:24px;padding:24px;margin-bottom:28px;box-shadow:var(--sombra)}
+.cumple .kicker{color:var(--lima)}
+.cumple-img{display:flex;flex-direction:column;gap:10px}
+.cumple-img img{border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .5s}
+.cumple-img img:hover{transform:scale(1.02)}
+.cumple-img .btn{background:var(--lima);color:var(--selva)}
+.cumple-tit{font-size:1.8rem;color:#fff;margin:4px 0}
+.cumple-lema{font-family:Fraunces,serif;font-style:italic;color:#f2b52e;font-size:1.15rem;margin-bottom:10px}
+.pasos{list-style:none;display:flex;flex-direction:column;gap:8px;margin:14px 0}
+.pasos li{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.08);border-radius:14px;padding:10px 12px;opacity:0;transform:translateX(-18px);transition:opacity .5s,transform .5s}
+.cumple.ver .pasos li{opacity:1;transform:none}
+.pasos li:nth-child(2){transition-delay:.12s}.pasos li:nth-child(3){transition-delay:.24s}.pasos li:nth-child(4){transition-delay:.36s}.pasos li:nth-child(5){transition-delay:.48s}.pasos li:nth-child(6){transition-delay:.6s}
+.pasos li>b{flex:none;width:38px;height:38px;border-radius:50%;background:#f2b52e;color:var(--selva);display:grid;place-items:center;font-family:Fraunces,serif;font-size:1.2rem}
+.pasos strong{display:block;font-size:.95rem}
+.pasos span{font-size:.78rem;color:var(--lima);font-weight:700}
+.porque{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+.porque b{width:100%;margin-bottom:2px}
+.porque span{background:rgba(242,181,46,.18);border:1px solid #f2b52e;color:#fff;padding:6px 11px;border-radius:999px;font-size:.78rem;font-weight:600}
+.cumple .aviso{color:#bcd3c1}
+@media (max-width:760px){.cumple{grid-template-columns:1fr;padding:18px}}
+.peticion{background:#fff;border-radius:24px;padding:24px;box-shadow:var(--sombra)}
+.peticion h3{font-size:1.5rem;color:var(--selva);margin-bottom:6px}
+.campos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:16px 0}
+.campos input,.campos select{padding:12px 14px;border:2px solid #d9e6cf;border-radius:12px;font:500 .95rem Inter;width:100%;background:#fff}
+.destinatarios{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.destinatarios label{display:flex;gap:6px;align-items:center;background:#eef6e2;padding:7px 12px;border-radius:999px;font-size:.8rem;font-weight:600;cursor:pointer}
+textarea#textoPeticion{width:100%;min-height:260px;padding:14px;border:2px solid #d9e6cf;border-radius:14px;font:400 .88rem/1.5 Inter;margin-top:10px;background:#fbfdf8}
+.fila-btn{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.aviso{font-size:.78rem;color:var(--gris);margin-top:10px}
+
+/* Bitácora */
+.linea{position:relative;padding-left:26px}
+.linea::before{content:"";position:absolute;left:8px;top:4px;bottom:4px;width:3px;background:linear-gradient(var(--brote),var(--rio));border-radius:3px}
+.hito{position:relative;margin-bottom:20px;background:#fff;border-radius:14px;padding:14px 16px;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.hito::before{content:"";position:absolute;left:-24px;top:18px;width:13px;height:13px;border-radius:50%;background:var(--lima);border:3px solid var(--selva)}
+.hito time{font-weight:800;font-size:.78rem;color:var(--hoja);text-transform:uppercase;letter-spacing:.06em}
+.hito h3{font-family:Inter;font-size:1rem;margin:4px 0}
+.hito p{font-size:.9rem;color:#33443a}
+
+/* Ayudar */
+#ayudar{background:var(--selva);color:#fff}
+#ayudar .titulo h2{color:#fff}#ayudar .titulo p{color:#cfe3cf}
+.ayuda{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.ayuda a{position:relative;display:flex;align-items:flex-end;min-height:220px;border-radius:20px;overflow:hidden;text-decoration:none;background-size:cover;background-position:center;padding:18px}
+.ayuda a::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(13,59,35,.92));transition:opacity .3s}
+.ayuda a:hover::before{opacity:.8}
+.ayuda div{position:relative}
+.ayuda h3{font-size:1.25rem;color:#fff}
+.ayuda p{font-size:.85rem;color:#e3efe0}
+.ayuda .precio{display:inline-block;margin-top:8px;background:var(--lima);color:var(--selva);font-weight:800;font-size:.8rem;padding:4px 10px;border-radius:999px}
+
+/* Anuncio y pie */
+.anuncio{background:linear-gradient(120deg,#ffcf3f,#ff8a3d);color:#2a1600;border-radius:22px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin:40px auto 0}
+.anuncio h3{font-size:1.4rem}
+footer{background:#08261a;color:#bcd3c1;padding:40px 0 90px;font-size:.85rem}
+footer a{color:var(--lima)}
+footer p{margin-bottom:8px}
+
+.flotante{position:fixed;right:14px;bottom:16px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%) translateY(30px);opacity:0;background:var(--selva);color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:.88rem;z-index:70;transition:.35s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.ver{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.revela{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.revela.ver{opacity:1;transform:none}
+
+@media (max-width:760px){
+  .ig,.videos{grid-template-columns:1fr}
+  .galeria{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}
+  .g1{grid-column:span 2;grid-row:span 2}.g2,.g3,.g4,.g5,.g6{grid-column:span 1;grid-row:span 1}
+  .item{grid-template-columns:86px 1fr}
+  .top .marca small{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a class="marca" href="#inicio">Saving The Amazon al Día<small>Vibras Positivas HM</small></a>
+  <div class="acciones">
+    <button class="btn btn-lima" id="btnActualizar" data-es="Actualizar" data-en="Refresh">Actualizar</button>
+    <button class="btn btn-borde" id="btnIdioma">EN</button>
+  </div>
+</header>
+
+<!-- PORTADA -->
+<section class="hero" id="inicio" style="padding:0">
+  <img class="poster" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_2.png" alt="">
+  <video autoplay muted loop playsinline preload="metadata" poster="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_2.png">
+    <source src="https://storage.googleapis.com/evershop-public/videos/ods/35b9a73f0e4347ae95223c0435569e7c.mp4.webm" type="video/webm">
+  </video>
+  <div class="wrap">
+    <span class="chip" data-es="Seguimiento ciudadano · @savingtheamazon" data-en="Citizen tracker · @savingtheamazon">Seguimiento ciudadano · @savingtheamazon</span>
+    <h1 data-es="Saving The Amazon <span>al Día</span>" data-en="Saving The Amazon <span>Daily</span>">Saving The Amazon <span>al Día</span></h1>
+    <p class="lead" data-es="Todo lo que hace la ONG que restaura la Amazonía y los manglares con sus comunidades: árboles sembrados, noticias de hoy, su Instagram y la Ley 2173 que obliga a las empresas a sembrar." data-en="Everything the NGO restoring the Amazon and mangroves with local communities is doing: trees planted, today's news, their Instagram and Law 2173, which requires companies to plant trees.">Todo lo que hace la ONG que restaura la Amazonía y los manglares con sus comunidades: árboles sembrados, noticias de hoy, su Instagram y la Ley 2173 que obliga a las empresas a sembrar.</p>
+    <div class="fila">
+      <a class="btn btn-lima" href="#hoy" data-es="Ver lo de hoy" data-en="See today">Ver lo de hoy</a>
+      <a class="btn btn-borde" href="#cifras" data-es="Cifras en vivo" data-en="Live figures">Cifras en vivo</a>
+      <a class="btn btn-borde" href="#ley" data-es="Ley 2173 y derecho de petición" data-en="Law 2173 and petition">Ley 2173 y derecho de petición</a>
+    </div>
+    <div class="vivo"><i></i><span id="relojBogota">—</span></div>
+  </div>
+</section>
+
+<div class="cinta"><div id="cinta">Cargando lo último de Saving The Amazon…</div></div>
+
+<!-- HOY -->
+<section id="hoy">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div>
+        <div class="kicker" data-es="Se actualiza cada vez que entras" data-en="Updates every time you open it">Se actualiza cada vez que entras</div>
+        <h2 data-es="Hoy" data-en="Today">Hoy</h2>
+        <div class="fecha-hoy" id="fechaHoy"></div>
+      </div>
+      <p data-es="Noticias y publicaciones de las últimas 24 horas sobre Saving The Amazon. Si hoy no hay nada nuevo, te mostramos lo más reciente." data-en="News from the last 24 hours about Saving The Amazon. If there is nothing new today, we show you the latest.">Noticias y publicaciones de las últimas 24 horas sobre Saving The Amazon. Si hoy no hay nada nuevo, te mostramos lo más reciente.</p>
+    </div>
+    <div class="hoy-grid" id="gridHoy"></div>
+    <div class="estado" id="estadoHoy"></div>
+  </div>
+</section>
+
+<!-- CIFRAS -->
+<section id="cifras">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div>
+        <div class="kicker" style="color:var(--lima)" data-es="Su impacto" data-en="Their impact">Su impacto</div>
+        <h2 data-es="Cifras en vivo" data-en="Live figures">Cifras en vivo</h2>
+      </div>
+      <p data-es="El robot revisa la página de Saving The Amazon cada 30 minutos y trae el contador de árboles sembrados." data-en="Our robot checks the Saving The Amazon website every 30 minutes and brings back the trees-planted counter.">El robot revisa la página de Saving The Amazon cada 30 minutos y trae el contador de árboles sembrados.</p>
+    </div>
+    <div class="cifras">
+      <div class="cifra revela"><strong data-n="arboles">0</strong><span data-es="árboles sembrados" data-en="trees planted">árboles sembrados</span></div>
+      <div class="cifra revela"><strong data-n="mangles">0</strong><span data-es="mangles sembrados" data-en="mangroves planted">mangles sembrados</span></div>
+      <div class="cifra revela"><strong data-n="co2">0</strong><span data-es="toneladas de CO₂ capturadas" data-en="tons of CO₂ captured">toneladas de CO₂ capturadas</span></div>
+      <div class="cifra revela"><strong data-n="familias">0</strong><span data-es="familias beneficiadas" data-en="families benefited">familias beneficiadas</span></div>
+      <div class="cifra revela"><strong data-n="comunidades">0</strong><span data-es="comunidades" data-en="communities">comunidades</span></div>
+      <div class="cifra revela"><strong data-n="paises">0</strong><span data-es="países: Colombia, Perú y Brasil" data-en="countries: Colombia, Peru, Brazil">países: Colombia, Perú y Brasil</span></div>
+    </div>
+    <div class="meta-millon revela">
+      <b data-es="Meta: sembrar 1.000.000 de árboles" data-en="Goal: plant 1,000,000 trees">Meta: sembrar 1.000.000 de árboles</b>
+      <div class="barra"><i id="barraMillon"></i></div>
+      <div id="textoMillon"></div>
+    </div>
+    <p class="fuente" id="fuenteCifras"></p>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section id="noticias">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div>
+        <div class="kicker" data-es="Búsqueda en vivo" data-en="Live search">Búsqueda en vivo</div>
+        <h2 data-es="Lo más reciente" data-en="Latest news">Lo más reciente</h2>
+      </div>
+      <p data-es="Lo más nuevo sale de primero. Al abrir la app buscamos en vivo en los medios, y el robot de GitHub trae noticias reales cada 30 minutos." data-en="Newest first. When you open the app we search the media live, and the GitHub robot brings real news every 30 minutes.">Lo más nuevo sale de primero. Al abrir la app buscamos en vivo en los medios, y el robot de GitHub trae noticias reales cada 30 minutos.</p>
+    </div>
+    <div class="buscador">
+      <input id="q" type="search" placeholder="Buscar: manglares, Vaupés, Ley 2173…" data-ph-es="Buscar: manglares, Vaupés, Ley 2173…" data-ph-en="Search: mangroves, Vaupés, Law 2173…">
+      <button class="btn btn-hoja" id="btnBuscarVivo" data-es="Buscar en vivo" data-en="Live search">Buscar en vivo</button>
+    </div>
+    <div class="filtros" id="filtros">
+      <button class="filtro on" data-f="todo" data-es="Todo" data-en="All">Todo</button>
+      <button class="filtro" data-f="sta" data-es="Saving The Amazon" data-en="Saving The Amazon">Saving The Amazon</button>
+      <button class="filtro" data-f="ley" data-es="Ley 2173" data-en="Law 2173">Ley 2173</button>
+      <button class="filtro" data-f="es" data-es="En español" data-en="In Spanish">En español</button>
+      <button class="filtro" data-f="en" data-es="In English" data-en="In English">In English</button>
+    </div>
+    <div class="lista" id="lista"></div>
+    <button class="btn btn-selva mas" id="btnMas" data-es="Ver más" data-en="Show more">Ver más</button>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram">
+  <div class="wrap ig">
+    <div class="ig-perfil revela">
+      <div class="kicker" style="color:var(--lima)">Instagram</div>
+      <h3>Saving The Amazon</h3>
+      <div class="handle">@savingtheamazon · <span data-es="Organización no gubernamental (ONG)" data-en="Non-governmental organization (NGO)">Organización no gubernamental (ONG)</span></div>
+      <div class="ig-nums">
+        <div><b>2.272</b><small data-es="publicaciones" data-en="posts">publicaciones</small></div>
+        <div><b>200 mil</b><small data-es="seguidores" data-en="followers">seguidores</small></div>
+        <div><b>5.524</b><small data-es="seguidos" data-en="following">seguidos</small></div>
+      </div>
+      <p data-es="Restauran la Amazonía y los manglares con sus comunidades. Siembra de especies nativas." data-en="They restore the Amazon and mangroves with their communities. Native species planting.">Restauran la Amazonía y los manglares con sus comunidades. Siembra de especies nativas.</p>
+      <div class="destacadas">
+        <span>Ley 2173</span><span data-es="Nosotros" data-en="About us">Nosotros</span><span data-es="Adopta un árbol" data-en="Adopt a tree">Adopta un árbol</span><span>Tarjeta BDB</span>
+      </div>
+      <div class="fila-btn">
+        <a class="btn btn-lima" href="https://www.instagram.com/savingtheamazon/" target="_blank" rel="noopener" data-es="Ver su Instagram" data-en="Open their Instagram">Ver su Instagram</a>
+        <a class="btn btn-borde" href="https://www.instagram.com/savingtheamazon/reels/" target="_blank" rel="noopener" data-es="Ver reels" data-en="Watch reels">Ver reels</a>
+      </div>
+      <p class="fuente" data-es="Datos del perfil al 9 de noviembre de 2026." data-en="Profile data as of November 9, 2026.">Datos del perfil al 9 de noviembre de 2026.</p>
+    </div>
+    <div class="revela">
+      <div class="kicker" data-es="Reels recientes" data-en="Recent reels">Reels recientes</div>
+      <div class="reels">
+        <a class="reel" href="https://www.instagram.com/savingtheamazon/reels/" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_3.png')"><span data-es="Este millón lleva el nombre de quienes lo hicieron posible" data-en="This million carries the names of those who made it possible">Este millón lleva el nombre de quienes lo hicieron posible</span></a>
+        <a class="reel" href="https://www.instagram.com/savingtheamazon/reels/" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_4.png')"><span data-es="¿Por qué?" data-en="Why?">¿Por qué?</span></a>
+        <a class="reel" href="https://www.instagram.com/savingtheamazon/reels/" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_5.png')"><span data-es="Ríos voladores" data-en="Flying rivers">Ríos voladores</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÓNDE SIEMBRAN -->
+<section id="territorio">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div>
+        <div class="kicker" data-es="Con las comunidades" data-en="With the communities">Con las comunidades</div>
+        <h2 data-es="Dónde siembran" data-en="Where they plant">Dónde siembran</h2>
+      </div>
+      <p data-es="Las comunidades escogen el territorio y las especies nativas que sirven para su seguridad alimentaria. Cada árbol queda georreferenciado y se puede ubicar en Geoforest." data-en="Communities choose the land and the native species that support their food security. Every tree is geo-referenced and can be located on Geoforest.">Las comunidades escogen el territorio y las especies nativas que sirven para su seguridad alimentaria. Cada árbol queda georreferenciado y se puede ubicar en Geoforest.</p>
+    </div>
+    <div class="galeria revela">
+      <figure class="g1"><img loading="lazy" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_1.png" alt="Comunidad Tayazú, Vaupés"><figcaption>Tayazú · Vaupés</figcaption></figure>
+      <figure class="g2"><img loading="lazy" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_2.png" alt="Siembra en Tayazú"><figcaption data-es="Siembra nativa" data-en="Native planting">Siembra nativa</figcaption></figure>
+      <figure class="g3"><img loading="lazy" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Mapa-Vaupes.jpg" alt="Mapa del Vaupés"><figcaption data-es="Mapa del Vaupés" data-en="Vaupés map">Mapa del Vaupés</figcaption></figure>
+      <figure class="g4"><img loading="lazy" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_3.png" alt="Comunidad"><figcaption data-es="Comunidad" data-en="Community">Comunidad</figcaption></figure>
+      <figure class="g5"><img loading="lazy" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_4.png" alt="Selva"><figcaption data-es="Selva" data-en="Rainforest">Selva</figcaption></figure>
+      <figure class="g6"><img loading="lazy" src="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_5.png" alt="Territorio"><figcaption data-es="Territorio" data-en="Territory">Territorio</figcaption></figure>
+    </div>
+    <div class="territorios revela">
+      <span>Vaupés</span><span>Guainía</span><span>Amazonas</span><span>Caquetá</span><span>Putumayo</span><span>Chocó</span><span>Bolívar</span><span data-es="Brasil" data-en="Brazil">Brasil</span><span data-es="Perú" data-en="Peru">Perú</span>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div><div class="kicker" style="color:var(--lima)" data-es="Videos reales" data-en="Real videos">Videos reales</div>
+      <h2 data-es="Somos Amazonía, somos manglares" data-en="We are the Amazon, we are mangroves">Somos Amazonía, somos manglares</h2></div>
+      <p data-es="Videos de la propia ONG." data-en="Videos from the NGO itself.">Videos de la propia ONG.</p>
+    </div>
+    <div class="videos">
+      <figure class="revela"><video controls muted playsinline preload="metadata" poster="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_1.png"><source src="https://storage.googleapis.com/evershop-public/videos/ods/35b9a73f0e4347ae95223c0435569e7c.mp4.webm" type="video/webm"></video><figcaption data-es="Somos Amazonía" data-en="We Are the Amazon">Somos Amazonía</figcaption></figure>
+      <figure class="revela"><video controls muted playsinline preload="metadata" poster="https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_4.png"><source src="https://storage.googleapis.com/evershop-public/videos/ods/9d0d39fa4b564b878aa4c96b1ab07266.mp4.webm" type="video/webm"></video><figcaption data-es="Somos manglares" data-en="We Are Mangroves">Somos manglares</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- LEY 2173 + DERECHO DE PETICIÓN -->
+<section id="ley">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div><div class="kicker" data-es="Lo que dice la ley" data-en="What the law says">Lo que dice la ley</div>
+      <h2 data-es="Ley 2173 de 2021: la Ley del Árbol" data-en="Law 2173 of 2021: the Tree Law">Ley 2173 de 2021: la Ley del Árbol</h2></div>
+      <p data-es="Es la ley que Saving The Amazon tiene en su primera historia destacada. Te la explicamos fácil." data-en="It's the law featured in Saving The Amazon's first Instagram highlight. Here it is, made simple.">Es la ley que Saving The Amazon tiene en su primera historia destacada. Te la explicamos fácil.</p>
+    </div>
+    <div class="ley-grid">
+      <div class="tarjeta revela"><h3 data-es="Dos árboles por trabajador" data-en="Two trees per employee">Dos árboles por trabajador</h3><p data-es="Las medianas y grandes empresas deben sembrar mínimo dos árboles por cada empleado en nómina, cada año." data-en="Medium and large companies must plant at least two trees per employee on payroll, every year.">Las medianas y grandes empresas deben sembrar mínimo dos árboles por cada empleado en nómina, cada año.</p></div>
+      <div class="tarjeta revela"><h3 data-es="Áreas de Vida" data-en="Life Areas">Áreas de Vida</h3><p data-es="Cada alcaldía, con la autoridad ambiental, debe delimitar las zonas donde se siembra: nacimientos de agua, rondas de ríos, humedales." data-en="Each municipality, with the environmental authority, must define where planting happens: springs, riverbanks, wetlands.">Cada alcaldía, con la autoridad ambiental, debe delimitar las zonas donde se siembra: nacimientos de agua, rondas de ríos, humedales.</p></div>
+      <div class="tarjeta revela"><h3 data-es="Solo especies nativas" data-en="Native species only">Solo especies nativas</h3><p data-es="Lo que se siembra debe ser nativo y no se puede aprovechar para madera." data-en="Trees must be native species and can't be harvested for timber.">Lo que se siembra debe ser nativo y no se puede aprovechar para madera.</p></div>
+      <div class="tarjeta revela"><h3 data-es="Ya está reglamentada" data-en="Now regulated">Ya está reglamentada</h3><p data-es="MinAmbiente la reglamentó con la Resolución 1491 del 17 de octubre de 2025, después de que un tribunal abriera desacato por la demora." data-en="MinAmbiente regulated it with Resolution 1491 of October 17, 2025, after a court opened contempt proceedings over the delay.">MinAmbiente la reglamentó con la Resolución 1491 del 17 de octubre de 2025, después de que un tribunal abriera desacato por la demora.</p></div>
+    </div>
+
+    <div class="cumple revela">
+      <div class="cumple-img">
+        <img loading="lazy" src="ley-2173-saving.jpg" alt="Infografía de Saving The Amazon: cumple la Ley 2173 con impacto real" id="imgLey">
+        <a class="btn btn-selva" href="ley-2173-saving.jpg" target="_blank" rel="noopener" data-es="Ver infografía completa" data-en="Open full infographic">Ver infografía completa</a>
+      </div>
+      <div>
+        <div class="kicker" data-es="Nuevo · infografía de Saving The Amazon" data-en="New · Saving The Amazon infographic">Nuevo · infografía de Saving The Amazon</div>
+        <h3 class="cumple-tit" data-es="Cumple la Ley 2173 con impacto real" data-en="Comply with Law 2173 with real impact">Cumple la Ley 2173 con impacto real</h3>
+        <p class="cumple-lema" data-es="&quot;Sembramos para cumplirle a la vida.&quot;" data-en="&quot;We plant to keep our promise to life.&quot;">"Sembramos para cumplirle a la vida."</p>
+        <p data-es="Cumplir la ley implica <b>trazabilidad, certificación y mantenimiento</b>. Así lo hacen ellos, paso a paso:" data-en="Complying means <b>traceability, certification and maintenance</b>. This is how they do it, step by step:">Cumplir la ley implica <b>trazabilidad, certificación y mantenimiento</b>. Así lo hacen ellos, paso a paso:</p>
+        <ol class="pasos">
+          <li><b>1</b><div><strong data-es="Diagnóstico normativo" data-en="Regulatory assessment">Diagnóstico normativo</strong><span data-es="1 semana" data-en="1 week">1 semana</span></div></li>
+          <li><b>2</b><div><strong data-es="Selección del área con resguardo indígena" data-en="Site selection with an indigenous reserve">Selección del área con resguardo indígena</strong><span data-es="1 semana" data-en="1 week">1 semana</span></div></li>
+          <li><b>3</b><div><strong data-es="Plan de siembra" data-en="Planting plan">Plan de siembra</strong><span data-es="2 a 4 semanas" data-en="2 to 4 weeks">2 a 4 semanas</span></div></li>
+          <li><b>4</b><div><strong data-es="Jornada(s) de siembra" data-en="Planting day(s)">Jornada(s) de siembra</strong><span data-es="1 a 4 semanas, según la cantidad de árboles" data-en="1 to 4 weeks, depending on the number of trees">1 a 4 semanas, según la cantidad de árboles</span></div></li>
+          <li><b>5</b><div><strong data-es="Trazabilidad digital (Geoforest)" data-en="Digital traceability (Geoforest)">Trazabilidad digital (Geoforest)</strong><span data-es="10 días" data-en="10 days">10 días</span></div></li>
+          <li><b>6</b><div><strong data-es="Certificación oficial" data-en="Official certification">Certificación oficial</strong><span data-es="Anual" data-en="Yearly">Anual</span></div></li>
+        </ol>
+        <div class="porque">
+          <b data-es="¿Por qué los eligen las empresas?" data-en="Why companies choose them">¿Por qué los eligen las empresas?</b>
+          <span data-es="Mantenimiento por 2 años" data-en="2-year maintenance">Mantenimiento por 2 años</span>
+          <span data-es="Transparencia y trazabilidad digital" data-en="Transparency and digital traceability">Transparencia y trazabilidad digital</span>
+          <span data-es="Gestión ante alcaldías y CAR" data-en="Handling with municipalities and CARs">Gestión ante alcaldías y CAR</span>
+          <span data-es="Restauración con resguardos indígenas" data-en="Restoration with indigenous reserves">Restauración con resguardos indígenas</span>
+          <span data-es="Impacto social medible" data-en="Measurable social impact">Impacto social medible</span>
+        </div>
+        <div class="fila-btn">
+          <a class="btn btn-hoja" href="https://bosquesconproposito.savingtheamazon.org/" target="_blank" rel="noopener" data-es="Diseña tu plan de siembra" data-en="Design your planting plan">Diseña tu plan de siembra</a>
+          <a class="btn btn-lima" id="btnWhatsLey" target="_blank" rel="noopener" data-es="Compartir con una empresa" data-en="Share with a company">Compartir con una empresa</a>
+        </div>
+        <p class="aviso" data-es="Pasos y tiempos según la infografía publicada por Saving The Amazon." data-en="Steps and timing as published by Saving The Amazon.">Pasos y tiempos según la infografía publicada por Saving The Amazon.</p>
+      </div>
+    </div>
+
+    <div class="peticion revela" id="peticion">
+      <div class="kicker" data-es="Exige que se cumpla" data-en="Demand compliance">Exige que se cumpla</div>
+      <h3 data-es="Derecho de petición: ¿dónde están las Áreas de Vida?" data-en="Petition: where are the Life Areas?">Derecho de petición: ¿dónde están las Áreas de Vida?</h3>
+      <p data-es="Pregúntale a tu alcaldía, a la corporación ambiental y al Ministerio qué pasó con la Ley 2173 en tu municipio. Llena tus datos y se envía de una sola vez a todos." data-en="Ask your municipality, the regional environmental authority and the Ministry what happened with Law 2173 in your town. Fill in your details and it goes to all of them at once.">Pregúntale a tu alcaldía, a la corporación ambiental y al Ministerio qué pasó con la Ley 2173 en tu municipio. Llena tus datos y se envía de una sola vez a todos.</p>
+      <div class="campos">
+        <input id="pNombre" placeholder="Nombre completo" data-ph-es="Nombre completo" data-ph-en="Full name">
+        <input id="pCedula" placeholder="Cédula" data-ph-es="Cédula" data-ph-en="ID number" inputmode="numeric">
+        <input id="pCorreo" placeholder="Tu correo para la respuesta" data-ph-es="Tu correo para la respuesta" data-ph-en="Your email for the reply" type="email">
+        <input id="pDireccion" placeholder="Dirección" data-ph-es="Dirección" data-ph-en="Address">
+        <input id="pMunicipio" value="Caucasia, Antioquia" placeholder="Municipio">
+      </div>
+      <b data-es="Se envía a:" data-en="Sent to:">Se envía a:</b>
+      <div class="destinatarios" id="destinatarios">
+        <label><input type="checkbox" checked value="alcaldia@caucasia-antioquia.gov.co"> Alcaldía de Caucasia</label>
+        <label><input type="checkbox" checked value="secretariadesarrollorural@caucasia-antioquia.gov.co"> Sec. Desarrollo Rural (ambiental) Caucasia</label>
+        <label><input type="checkbox" checked value="corantioquia@corantioquia.gov.co"> Corantioquia</label>
+        <label><input type="checkbox" checked value="servicioalciudadano@minambiente.gov.co"> MinAmbiente</label>
+      </div>
+      <textarea id="textoPeticion" aria-label="Texto del derecho de petición"></textarea>
+      <div class="fila-btn">
+        <button class="btn btn-hoja" id="btnEnviar" data-es="Enviar a todos de una vez" data-en="Send to all at once">Enviar a todos de una vez</button>
+        <button class="btn btn-selva" id="btnCopiar" data-es="Copiar texto" data-en="Copy text">Copiar texto</button>
+        <a class="btn btn-lima" id="btnWhats" target="_blank" rel="noopener" data-es="Compartir por WhatsApp" data-en="Share on WhatsApp">Compartir por WhatsApp</a>
+      </div>
+      <p class="aviso" data-es="Por ley (art. 14 de la Ley 1755 de 2015) deben responder en 15 días hábiles, y en 10 cuando se piden documentos o información. Si vives en otro municipio, cambia el municipio y los correos de la alcaldía." data-en="By law (art. 14, Law 1755 of 2015) they must answer within 15 business days, or 10 when documents or information are requested. If you live elsewhere, change the town and the municipal emails.">Por ley (art. 14 de la Ley 1755 de 2015) deben responder en 15 días hábiles, y en 10 cuando se piden documentos o información. Si vives en otro municipio, cambia el municipio y los correos de la alcaldía.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BITÁCORA -->
+<section id="bitacora">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div><div class="kicker" data-es="Paso a paso" data-en="Step by step">Paso a paso</div>
+      <h2 data-es="Bitácora" data-en="Timeline">Bitácora</h2></div>
+      <p data-es="Los hechos que vamos registrando. Las noticias nuevas del robot aparecen arriba en Hoy y Lo más reciente." data-en="Milestones we keep logging. New items from the robot show up in Today and Latest.">Los hechos que vamos registrando. Las noticias nuevas del robot aparecen arriba en Hoy y Lo más reciente.</p>
+    </div>
+    <div class="linea" id="linea"></div>
+  </div>
+</section>
+
+<!-- CÓMO AYUDAR -->
+<section id="ayudar">
+  <div class="wrap">
+    <div class="titulo revela">
+      <div><div class="kicker" style="color:var(--lima)" data-es="Súmate" data-en="Join in">Súmate</div>
+      <h2 data-es="Cómo ayudar" data-en="How to help">Cómo ayudar</h2></div>
+      <p data-es="Todo se hace en los canales oficiales de Saving The Amazon." data-en="Everything happens through Saving The Amazon's official channels.">Todo se hace en los canales oficiales de Saving The Amazon.</p>
+    </div>
+    <div class="ayuda">
+      <a class="revela" href="https://www.savingtheamazon.org/dona-un-arbol" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_2.png')"><div><h3 data-es="Adopta un árbol" data-en="Adopt a tree">Adopta un árbol</h3><p data-es="Lo siembran comunidades indígenas a tu nombre. Recibes foto, certificado y ubicación." data-en="Indigenous communities plant it in your name. You get a photo, certificate and location.">Lo siembran comunidades indígenas a tu nombre. Recibes foto, certificado y ubicación.</p><span class="precio" data-es="Desde $65.000 COP en su tienda" data-en="From COP 65,000 in their store">Desde $65.000 COP en su tienda</span></div></a>
+      <a class="revela" href="https://geoforest.savingtheamazon.org/" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Mapa-Vaupes.jpg')"><div><h3 data-es="Ubica tu árbol" data-en="Find your tree">Ubica tu árbol</h3><p data-es="Geoforest muestra dónde quedó sembrado cada árbol." data-en="Geoforest shows where each tree was planted.">Geoforest muestra dónde quedó sembrado cada árbol.</p></div></a>
+      <a class="revela" href="https://apadrinaelamazonas.salvandoelamazonas.com/" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_3.png')"><div><h3 data-es="Apadrina el Amazonas" data-en="Sponsor the Amazon">Apadrina el Amazonas</h3><p data-es="Donación mensual para sostener las siembras." data-en="Monthly donation to sustain the plantings.">Donación mensual para sostener las siembras.</p></div></a>
+      <a class="revela" href="https://bosquesconproposito.savingtheamazon.org/" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_4.png')"><div><h3 data-es="Empresas: cumplir la Ley 2173" data-en="Companies: comply with Law 2173">Empresas: cumplir la Ley 2173</h3><p data-es="Bosques con propósito, manglares y compensación de huella." data-en="Purpose forests, mangroves and footprint offsetting.">Bosques con propósito, manglares y compensación de huella.</p></div></a>
+      <a class="revela" href="https://voluntarios.savingtheamazon.org" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_5.png')"><div><h3 data-es="Voluntariado" data-en="Volunteer">Voluntariado</h3><p data-es="Siembras presenciales y viajes con propósito." data-en="In-person plantings and purpose trips.">Siembras presenciales y viajes con propósito.</p></div></a>
+      <a class="revela" href="https://wa.me/573103516465" target="_blank" rel="noopener" style="background-image:url('https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_1.png')"><div><h3 data-es="Escríbeles" data-en="Contact them">Escríbeles</h3><p>WhatsApp (+57) 310 351 6465 · contacto@savingtheamazon.org</p></div></a>
+    </div>
+
+    <div class="anuncio revela">
+      <div><h3 data-es="¿Quieres una app así para tu negocio?" data-en="Want an app like this for your business?">¿Quieres una app así para tu negocio?</h3>
+      <p data-es="Vibras Positivas HM hace apps, páginas y herramientas digitales a la medida." data-en="Vibras Positivas HM builds custom apps, websites and digital tools.">Vibras Positivas HM hace apps, páginas y herramientas digitales a la medida.</p></div>
+      <a class="btn btn-selva" href="https://wa.me/573117700431?text=Hola%20Harold,%20vi%20la%20app%20Saving%20The%20Amazon%20al%20D%C3%ADa%20y%20quiero%20una%20app" target="_blank" rel="noopener" data-es="Escríbele a Harold" data-en="Message Harold">Escríbele a Harold</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p data-es="App ciudadana de seguimiento hecha por Vibras Positivas HM (Caucasia, Antioquia). No es una app oficial de Saving The Amazon; las fotos, videos y cifras son de sus canales públicos." data-en="Citizen tracking app by Vibras Positivas HM (Caucasia, Antioquia). Not an official Saving The Amazon app; photos, videos and figures come from their public channels.">App ciudadana de seguimiento hecha por Vibras Positivas HM (Caucasia, Antioquia). No es una app oficial de Saving The Amazon; las fotos, videos y cifras son de sus canales públicos.</p>
+    <p><a href="https://www.savingtheamazon.org" target="_blank" rel="noopener">savingtheamazon.org</a> · <a href="https://www.instagram.com/savingtheamazon/" target="_blank" rel="noopener">@savingtheamazon</a> · <a href="https://www.minambiente.gov.co/wp-content/uploads/2025/12/ABC-LEY-DE-ARBOL.pdf" target="_blank" rel="noopener">ABC Ley del Árbol (MinAmbiente)</a></p>
+    <p id="piRobot"></p>
+    <p>© 2026 Vibras Positivas HM · 311 770 0431</p>
+  </div>
+</footer>
+
+<button class="btn btn-lima flotante" id="btnCompartir" data-es="Compartir app" data-en="Share app">Compartir app</button>
+<div class="toast" id="toast"></div>
+
+<script>
+(() => {
+'use strict';
+const TZ = 'America/Bogota';
+const URL_APP = 'https://saving-the-amazon-al-dia.netlify.app/';
+const FOTOS = [1,2,3,4,5].map(n => `https://www.savingtheamazon.org/images/Comunidades/comunidades/Vaupes/Tayazu/Tayazu_${n}.png`);
+// Cifras de respaldo: savingtheamazon.org, 9 nov 2026
+const CIFRAS_BASE = { arboles:914273, mangles:10000, co2:987414, familias:895, comunidades:54, paises:3, fecha:'2026-11-09T09:00:00-05:00' };
+const QUERIES = [
+  { q:'"Saving The Amazon"', hl:'es-419', gl:'CO', ceid:'CO:es-419', tag:'sta' },
+  { q:'"Saving The Amazon" Colombia', hl:'en-US', gl:'US', ceid:'US:en', tag:'sta' },
+  { q:'"Ley 2173" árboles', hl:'es-419', gl:'CO', ceid:'CO:es-419', tag:'ley' }
+];
+const PROXIES = [
+  u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
+  u => 'https://corsproxy.io/?url=' + encodeURIComponent(u)
+];
+let idioma = 'es';
+try { idioma = localStorage.getItem('sta-idioma') || 'es'; } catch(e) {}
+let noticias = [];
+let filtro = 'todo';
+let mostrar = 12;
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const t = (es, en) => idioma === 'en' ? en : es;
+const esc = s => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtNum = n => Number(n).toLocaleString(idioma === 'en' ? 'en-US' : 'es-CO');
+const fmtFecha = (d, conHora) => new Intl.DateTimeFormat(idioma === 'en' ? 'en-US' : 'es-CO',
+  Object.assign({ timeZone: TZ, day:'numeric', month:'short', year:'numeric' }, conHora ? { hour:'numeric', minute:'2-digit' } : {})).format(d);
+
+function toast(msg){ const el=$('#toast'); el.textContent=msg; el.classList.add('ver'); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove('ver'),2600); }
+
+/* ---------- Idioma ---------- */
+function aplicarIdioma(){
+  document.documentElement.lang = idioma;
+  $$('[data-es]').forEach(el => { el.innerHTML = idioma === 'en' ? el.dataset.en : el.dataset.es; });
+  $$('[data-ph-es]').forEach(el => { el.placeholder = idioma === 'en' ? el.dataset.phEn : el.dataset.phEs; });
+  $('#btnIdioma').textContent = idioma === 'en' ? 'ES' : 'EN';
+  pintarFecha(); pintarHoy(); pintarLista(); pintarCifras(false); pintarBitacora(); armarPeticion(); pintarCinta();
+}
+$('#btnIdioma').onclick = () => { idioma = idioma === 'es' ? 'en' : 'es'; try{localStorage.setItem('sta-idioma',idioma)}catch(e){} aplicarIdioma(); };
+
+/* ---------- Reloj y fecha (hora real de Colombia) ---------- */
+function pintarFecha(){
+  const ahora = new Date();
+  $('#fechaHoy').textContent = new Intl.DateTimeFormat(idioma==='en'?'en-US':'es-CO',{timeZone:TZ,weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(ahora);
+  $('#relojBogota').textContent = t('En vivo · Hora de Colombia ', 'Live · Colombia time ') +
+    new Intl.DateTimeFormat(idioma==='en'?'en-US':'es-CO',{timeZone:TZ,hour:'numeric',minute:'2-digit',second:'2-digit'}).format(ahora);
+}
+setInterval(pintarFecha, 1000);
+
+/* ---------- Noticias ---------- */
+function normalizar(n){
+  return { titulo:n.titulo||n.title, link:n.link, fuente:n.fuente||n.source||'', fecha:n.fecha||n.date, lang:n.lang||'es', tag:n.tag||'sta' };
+}
+function unir(nuevas){
+  const vistos = new Map(noticias.map(n => [n.link, n]));
+  nuevas.map(normalizar).forEach(n => {
+    if (!n.titulo || !n.link) return;
+    const clave = n.titulo.toLowerCase().replace(/\s+-\s+[^-]+$/,'').trim();
+    const dup = [...vistos.values()].some(v => v.titulo.toLowerCase().replace(/\s+-\s+[^-]+$/,'').trim() === clave);
+    if (!vistos.has(n.link) && !dup) vistos.set(n.link, n);
+  });
+  noticias = [...vistos.values()].sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
+}
+function parsearRSS(xml, meta){
+  const doc = new DOMParser().parseFromString(xml, 'text/xml');
+  return [...doc.querySelectorAll('item')].map(it => {
+    const titulo = it.querySelector('title')?.textContent || '';
+    const fuente = it.querySelector('source')?.textContent || titulo.split(' - ').pop();
+    return { titulo: titulo.replace(/\s+-\s+[^-]+$/,''), link: it.querySelector('link')?.textContent, fuente,
+      fecha: new Date(it.querySelector('pubDate')?.textContent || Date.now()).toISOString(),
+      lang: meta.hl.startsWith('en') ? 'en' : 'es', tag: meta.tag };
+  });
+}
+async function traerConProxy(url){
+  for (const p of PROXIES){
+    try{
+      const ctrl = new AbortController(); const to = setTimeout(()=>ctrl.abort(), 9000);
+      const r = await fetch(p(url), { signal: ctrl.signal, cache:'no-store' }); clearTimeout(to);
+      if (r.ok){ const txt = await r.text(); if (txt.includes('<item')) return txt; }
+    }catch(e){}
+  }
+  return null;
+}
+async function busquedaEnVivo(extra){
+  const qs = extra ? [{ q:`"Saving The Amazon" ${extra}`, hl:'es-419', gl:'CO', ceid:'CO:es-419', tag:'sta' }] : QUERIES;
+  let total = 0;
+  await Promise.all(qs.map(async m => {
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(m.q)}&hl=${m.hl}&gl=${m.gl}&ceid=${m.ceid}`;
+    const xml = await traerConProxy(url);
+    if (xml){ const items = parsearRSS(xml, m); total += items.length; unir(items); }
+  }));
+  return total;
+}
+async function cargarRobot(){
+  try{
+    const r = await fetch('noticias.json?v=' + Date.now(), { cache:'no-store' });
+    if (!r.ok) throw 0;
+    const data = await r.json();
+    unir(data.noticias || []);
+    if (data.cifras && data.cifras.arboles) Object.assign(CIFRAS_BASE, data.cifras);
+    if (data.actualizado) $('#piRobot').textContent = t('Robot de GitHub: última revisión ', 'GitHub robot: last check ') + fmtFecha(new Date(data.actualizado), true);
+    return true;
+  }catch(e){ return false; }
+}
+function foto(i){ return FOTOS[Math.abs(i) % FOTOS.length]; }
+function hashStr(s){ let h=0; for (const c of s) h = (h*31 + c.charCodeAt(0))|0; return h; }
+function esDeHoy(n){ return (Date.now() - new Date(n.fecha)) < 24*3600*1000; }
+
+function pintarHoy(){
+  const grid = $('#gridHoy');
+  const hoy = noticias.filter(esDeHoy);
+  const usar = hoy.length ? hoy.slice(0,6) : noticias.slice(0,3);
+  if (!usar.length){
+    grid.innerHTML = `<div class="vacio">${t('Buscando noticias…','Searching news…')}</div>`;
+    return;
+  }
+  grid.innerHTML = (hoy.length ? '' : `<div class="vacio" style="grid-column:1/-1">${t('Hoy todavía no hay noticias nuevas de Saving The Amazon. Esto es lo más reciente:','No new Saving The Amazon news yet today. Here is the latest:')}</div>`) +
+    usar.map(n => `<a class="nota" href="${esc(n.link)}" target="_blank" rel="noopener">
+      <div class="foto" style="background-image:url('${foto(hashStr(n.link))}')"></div>
+      <div class="cuerpo"><div class="meta"><span>${esc(n.fuente)}</span>${esDeHoy(n)?`<span class="nueva">${t('Hoy','Today')}</span>`:''}</div>
+      <h3>${esc(n.titulo)}</h3><div class="meta"><span>${fmtFecha(new Date(n.fecha), true)}</span></div></div></a>`).join('');
+}
+function filtradas(){
+  const q = $('#q').value.trim().toLowerCase();
+  return noticias.filter(n => (filtro==='todo' || n.tag===filtro || n.lang===filtro) &&
+    (!q || (n.titulo + ' ' + n.fuente).toLowerCase().includes(q)));
+}
+function pintarLista(){
+  const lista = filtradas();
+  $('#lista').innerHTML = lista.length ? lista.slice(0, mostrar).map(n => `
+    <a class="item" href="${esc(n.link)}" target="_blank" rel="noopener">
+      <div class="mini" style="background-image:url('${foto(hashStr(n.link))}')"></div>
+      <div><h3>${esc(n.titulo)}</h3><div class="meta">${esc(n.fuente)} · ${fmtFecha(new Date(n.fecha), true)} ${esDeHoy(n)?'· <b style="color:var(--hoja)">'+t('HOY','TODAY')+'</b>':''}</div></div>
+    </a>`).join('') : `<div class="vacio">${t('No hay resultados con ese filtro. Prueba “Buscar en vivo”.','No results for that filter. Try “Live search”.')}</div>`;
+  $('#btnMas').style.display = lista.length > mostrar ? '' : 'none';
+}
+function pintarCinta(){
+  const items = noticias.slice(0,8).map(n => `<b>·</b>${esc(n.titulo)}`).join('');
+  $('#cinta').innerHTML = items || t('Saving The Amazon · Restauran la Amazonía y los manglares con sus comunidades','Saving The Amazon · Restoring the Amazon and mangroves with local communities');
+}
+$('#q').addEventListener('input', () => { mostrar = 12; pintarLista(); });
+$('#filtros').addEventListener('click', e => {
+  const b = e.target.closest('.filtro'); if (!b) return;
+  $$('.filtro').forEach(x => x.classList.remove('on')); b.classList.add('on'); filtro = b.dataset.f; mostrar = 12; pintarLista();
+});
+$('#btnMas').onclick = () => { mostrar += 12; pintarLista(); };
+$('#btnBuscarVivo').onclick = async () => {
+  const b = $('#btnBuscarVivo'); b.classList.add('girando');
+  const n = await busquedaEnVivo($('#q').value.trim());
+  b.classList.remove('girando'); pintarTodo();
+  toast(n ? t(`Búsqueda en vivo: ${n} resultados`,`Live search: ${n} results`) : t('Sin conexión con los medios ahora; mostramos lo guardado','Could not reach news sources; showing saved items'));
+};
+
+/* ---------- Cifras animadas ---------- */
+function pintarCifras(animar){
+  $$('[data-n]').forEach(el => {
+    const fin = Number(CIFRAS_BASE[el.dataset.n]) || 0;
+    const pre = (['arboles','mangles','co2'].includes(el.dataset.n)) ? '+' : '';
+    if (!animar){ el.textContent = pre + fmtNum(fin); return; }
+    const t0 = performance.now(), dur = 2200;
+    const paso = now => { const p = Math.min(1,(now-t0)/dur), e = 1-Math.pow(1-p,3);
+      el.textContent = pre + fmtNum(Math.round(fin*e)); if (p<1) requestAnimationFrame(paso); };
+    requestAnimationFrame(paso);
+  });
+  const pct = Math.min(100, CIFRAS_BASE.arboles / 1e6 * 100);
+  $('#barraMillon').style.width = pct.toFixed(1) + '%';
+  $('#textoMillon').textContent = t(`${pct.toFixed(1)} % de la meta · faltan ${fmtNum(Math.max(0,1e6-CIFRAS_BASE.arboles))} árboles`,
+    `${pct.toFixed(1)}% of the goal · ${fmtNum(Math.max(0,1e6-CIFRAS_BASE.arboles))} trees to go`);
+  $('#fuenteCifras').textContent = t('Fuente: savingtheamazon.org · dato del ','Source: savingtheamazon.org · as of ') + fmtFecha(new Date(CIFRAS_BASE.fecha), true);
+}
+let cifrasAnimadas = false;
+
+/* ---------- Bitácora ---------- */
+const HITOS = [
+  { f:'2026-11-09', es:['Publican su ruta para cumplir la Ley 2173','Infografía con 6 pasos: diagnóstico, área con resguardo indígena, plan, siembra, trazabilidad en Geoforest y certificación anual.'], en:['They publish their Law 2173 roadmap','Infographic with 6 steps: assessment, site with an indigenous reserve, plan, planting, Geoforest traceability and yearly certification.'] },
+  { f:'2026-11-09', es:['La cuenta llega a 200 mil seguidores','En Instagram tiene 2.272 publicaciones y su contador web pasa de 914.000 árboles, camino al millón.'], en:['The account reaches 200K followers','2,272 Instagram posts and its web counter passes 914,000 trees, on the way to one million.'] },
+  { f:'2026-09-24', es:['Nueva alianza con Puntos Verdes Lito','Los residuos electrónicos se convierten en árboles nativos o mangles.'], en:['New alliance with Puntos Verdes Lito','E-waste is turned into native trees or mangroves.'] },
+  { f:'2026-09-26', es:['Siembra presencial en Bogotá','Jornada abierta para sembrar un árbol nativo en la ciudad.'], en:['In-person planting in Bogotá','Open day to plant a native tree in the city.'] },
+  { f:'2026-08-15', es:['Entrevista en Semana sobre la Ley 2173','Su equipo explicó cómo las empresas pueden cumplir la ley con impacto real y seguimiento a los árboles.'], en:['Semana interview on Law 2173','Their team explained how companies can comply with real impact and tree tracking.'] },
+  { f:'2026-06-16', es:['Alianza con Premios PRODU','Cada ganador recibe un árbol en la Amazonía; el bosque ya tenía 331 árboles.'], en:['Alliance with PRODU Awards','Each winner gets a tree in the Amazon; the forest already had 331 trees.'] },
+  { f:'2025-10-17', es:['Se reglamenta la Ley 2173','MinAmbiente expide la Resolución 1491 de 2025.'], en:['Law 2173 is regulated','MinAmbiente issues Resolution 1491 of 2025.'] }
+].sort((a,b) => b.f.localeCompare(a.f));
+function pintarBitacora(){
+  $('#linea').innerHTML = HITOS.map(h => { const [ti, tx] = h[idioma]; return `<div class="hito revela ver"><time>${fmtFecha(new Date(h.f+'T12:00:00-05:00'))}</time><h3>${esc(ti)}</h3><p>${esc(tx)}</p></div>`; }).join('');
+}
+
+/* ---------- Derecho de petición ---------- */
+function destinatarios(){ return $$('#destinatarios input:checked').map(i => i.value); }
+function armarPeticion(){
+  const v = id => $(id).value.trim();
+  const nombre = v('#pNombre') || '[Tu nombre]', cc = v('#pCedula') || '[Cédula]', correo = v('#pCorreo') || '[Correo]',
+        dir = v('#pDireccion') || '[Dirección]', mun = v('#pMunicipio') || 'Caucasia, Antioquia';
+  const fecha = new Intl.DateTimeFormat('es-CO',{timeZone:TZ,day:'numeric',month:'long',year:'numeric'}).format(new Date());
+  $('#textoPeticion').value =
+`${mun.split(',')[0]}, ${fecha}
+
+Señores
+ALCALDÍA MUNICIPAL DE ${mun.split(',')[0].toUpperCase()}
+CORPORACIÓN AUTÓNOMA REGIONAL DEL CENTRO DE ANTIOQUIA – CORANTIOQUIA
+MINISTERIO DE AMBIENTE Y DESARROLLO SOSTENIBLE
+
+Asunto: Derecho de petición – Cumplimiento de la Ley 2173 de 2021 y la Resolución 1491 de 2025 (Áreas de Vida) en ${mun}
+
+Yo, ${nombre}, identificado(a) con cédula ${cc}, en ejercicio del derecho fundamental de petición (artículo 23 de la Constitución Política y Ley 1755 de 2015), respetuosamente solicito la siguiente información:
+
+1. Si el municipio de ${mun} ya delimitó sus Áreas de Vida conforme al artículo 3 de la Ley 2173 de 2021 y a la Resolución 1491 de 2025. En caso afirmativo, copia del acto administrativo y la ubicación (coordenadas o mapa) de cada Área de Vida.
+2. Si no se han delimitado, las razones y el cronograma con fechas para hacerlo.
+3. Cuántas medianas y grandes empresas del municipio han reportado su programa de siembra de mínimo dos (2) árboles por empleado, cuántos árboles se han sembrado, de qué especies nativas y dónde.
+4. Cuántos certificados "Siembra Vida Empresarial" y "Siembra Vida Buen Ciudadano" se han expedido y a quiénes.
+5. Qué seguimiento y mantenimiento se hace a los árboles sembrados y qué porcentaje ha sobrevivido.
+6. Qué dependencia y funcionario responden por este tema y cómo puede la ciudadanía participar en las jornadas de siembra.
+
+Solicito que, si alguna de estas preguntas no es de su competencia, se dé traslado a la entidad competente según el artículo 21 de la Ley 1755 de 2015 y se me informe.
+
+Recibo respuesta en el correo ${correo} y en la dirección ${dir}.
+
+Atentamente,
+
+${nombre}
+C.C. ${cc}
+${correo}`;
+  const msg = t('Pide conmigo que se cumpla la Ley 2173 (Ley del Árbol). Envía el derecho de petición desde aquí: ','Join me in demanding compliance with Law 2173 (Tree Law). Send the petition from here: ') + URL_APP + '#peticion';
+  $('#btnWhats').href = 'https://wa.me/?text=' + encodeURIComponent(msg);
+  const msgLey = t('¿Tu empresa ya cumple la Ley 2173 (2 árboles por empleado al año)? Mira cómo hacerlo paso a paso con Saving The Amazon: ','Does your company comply with Law 2173 (2 trees per employee per year)? See how, step by step, with Saving The Amazon: ') + URL_APP + '#ley';
+  $('#btnWhatsLey').href = 'https://wa.me/?text=' + encodeURIComponent(msgLey);
+}
+['#pNombre','#pCedula','#pCorreo','#pDireccion','#pMunicipio'].forEach(id => $(id).addEventListener('input', armarPeticion));
+$('#btnEnviar').onclick = () => {
+  const para = destinatarios();
+  if (!para.length) return toast(t('Escoge al menos una entidad','Choose at least one recipient'));
+  if (!$('#pNombre').value.trim() || !$('#pCedula').value.trim()) return toast(t('Escribe tu nombre y cédula','Enter your name and ID'));
+  const asunto = 'Derecho de petición – Cumplimiento Ley 2173 de 2021 (Áreas de Vida) en ' + ($('#pMunicipio').value.trim() || 'Caucasia');
+  location.href = 'mailto:' + para.join(',') + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent($('#textoPeticion').value);
+};
+$('#btnCopiar').onclick = async () => {
+  try { await navigator.clipboard.writeText($('#textoPeticion').value); toast(t('Texto copiado','Text copied')); }
+  catch(e){ $('#textoPeticion').select(); document.execCommand('copy'); toast(t('Texto copiado','Text copied')); }
+};
+
+/* ---------- Compartir ---------- */
+$('#btnCompartir').onclick = async () => {
+  const data = { title:'Saving The Amazon al Día', text:t('Sigue día a día a Saving The Amazon','Follow Saving The Amazon day by day'), url:URL_APP };
+  try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(URL_APP); toast(t('Enlace copiado','Link copied')); } } catch(e){}
+};
+
+/* ---------- Actualizar ---------- */
+function pintarTodo(){ pintarHoy(); pintarLista(); pintarCinta(); }
+async function actualizar(manual){
+  const b = $('#btnActualizar'); b.classList.add('girando');
+  $('#estadoHoy').textContent = t('Buscando en vivo…','Searching live…');
+  await cargarRobot(); pintarTodo(); pintarCifras(!cifrasAnimadas && manual);
+  const n = await busquedaEnVivo();
+  pintarTodo();
+  b.classList.remove('girando');
+  $('#estadoHoy').textContent = t('Actualizado: ','Updated: ') + fmtFecha(new Date(), true) + (n ? '' : t(' · búsqueda en vivo no disponible ahora, se muestra lo del robot',' · live search unavailable now, showing robot data'));
+  if (manual) toast(t('App actualizada','App updated'));
+}
+$('#btnActualizar').onclick = () => actualizar(true);
+
+/* ---------- Animaciones al hacer scroll ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting){ e.target.classList.add('ver');
+    if (!cifrasAnimadas && e.target.closest('#cifras')){ cifrasAnimadas = true; pintarCifras(true); }
+    io.unobserve(e.target); }
+}), { threshold:.15 });
+$$('.revela').forEach(el => io.observe(el));
+
+/* ---------- Arranque ---------- */
+aplicarIdioma();
+actualizar(false);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') actualizar(false); });
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+})();
+</script>
+</body>
+</html>

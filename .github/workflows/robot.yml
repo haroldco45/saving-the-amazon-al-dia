@@ -1,0 +1,30 @@
+name: Robot Saving The Amazon al Día
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # cada 30 minutos
+  workflow_dispatch:          # botón "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: robot
+  cancel-in-progress: false
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Traer noticias y cifras
+        run: node scripts/robot.mjs
+      - name: Guardar si hubo cambios
+        run: |
+          git config user.name "robot-vibras"
+          git config user.email "robot@vibraspositivashm.com"
+          git add noticias.json
+          git diff --cached --quiet || (git commit -m "Robot: noticias $(TZ=America/Bogota date '+%Y-%m-%d %H:%M') hora Colombia" && git push)

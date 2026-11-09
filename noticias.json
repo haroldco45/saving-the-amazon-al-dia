@@ -1,0 +1,54 @@
+{
+ "actualizado": "2026-11-09T14:10:00Z",
+ "cifras": {
+  "arboles": 914273,
+  "mangles": 10000,
+  "co2": 987414,
+  "familias": 895,
+  "comunidades": 54,
+  "paises": 3,
+  "fecha": "2026-11-09T09:00:00-05:00"
+ },
+ "noticias": [
+  {
+   "titulo": "La Ley 2173 no solo es sembrar árboles: ¿qué deben hacer hoy las empresas para generar un impacto ambiental real?",
+   "link": "https://www.semana.com/foros-semana/sostenible/articulo/la-ley-2173-no-solo-es-sembrar-arboles-que-deben-hacer-hoy-las-empresas-para-generar-un-impacto-ambiental-real/202649/",
+   "fuente": "Semana",
+   "fecha": "2026-08-15T17:56:00Z",
+   "lang": "es",
+   "tag": "ley"
+  },
+  {
+   "titulo": "Saving The Amazon y Cuidando a Colombia: alianza para restaurar ecosistemas y fortalecer comunidades",
+   "link": "https://savingtheamazon.org/en/blog",
+   "fuente": "Blog Saving The Amazon",
+   "fecha": "2026-09-24T15:00:00Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Saving the Amazon une fuerzas con Premios PRODU para servir al planeta",
+   "link": "https://www.premiosprodu.com/prensa/saving-the-amazon-une-fuerzas-con-premios-produ-para-servir-al-planeta/",
+   "fuente": "Premios PRODU",
+   "fecha": "2026-06-16T15:00:00Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Premios Saving The Amazon 2026: reconocimiento a empresas pioneras de la Ley 2173",
+   "link": "https://premios.savingtheamazon.org/",
+   "fuente": "Saving The Amazon",
+   "fecha": "2026-06-01T15:00:00Z",
+   "lang": "es",
+   "tag": "ley"
+  },
+  {
+   "titulo": "ABC de la Resolución 1491 de 2025 que reglamenta la Ley del Árbol",
+   "link": "https://www.minambiente.gov.co/wp-content/uploads/2025/12/ABC-LEY-DE-ARBOL.pdf",
+   "fuente": "MinAmbiente",
+   "fecha": "2025-12-01T15:00:00Z",
+   "lang": "es",
+   "tag": "ley"
+  }
+ ]
+}
