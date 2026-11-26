@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T18:04:04.799Z",
+ "actualizado": "2026-11-26T01:52:52.868Z",
  "cifras": {
   "arboles": 914273,
   "mangles": 10000,
@@ -10,6 +10,14 @@
   "fecha": "2026-11-09T09:00:00-05:00"
  },
  "noticias": [
+  {
+   "titulo": "Saving The Amazon alcanza su primer millón de árboles sembrados y fortalece la conservación en Colombia",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM1I3MHRkb3k0OFZ4Y2FpcHg4V3Noa1E1N3hMYzN0dW10MFlFVEV3bnYwOEg4cHBRcmV4RDI4bjJDdFphZno1a0xwTFRINUhKcDhEMHEweTZGX0ZrNzFNMTFtN2tmTzAwZ0JqSUpNQlhvMFVaWlVCaXNvSGw3SGp2VkRlM1JDbEl4dTh5V1dPX0V1eTl6Z0hpeTVTWTFqZVhFUjhmeGZ6eVVPeG11R3ZHSEh2MWN5NDZ3eVpqQ2pKNGNaXzlTRDBqVFAyR2JGNGV1UVVB?oc=5",
+   "fuente": "Revista DC",
+   "fecha": "2026-11-25T19:50:20.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
   {
    "titulo": "Sembramos un millón de árboles y tenemos millones de razones para seguir escribiendo esta historia",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNM1VmenlZRF9senkwUUMydFotWUNzTGdaSzhqbFZISEF1SzhNTzVtR2ZISHRwM2J5TnAyVHUwQ0FWbUZ2dThaQ3FnWGRuQjlUTmFkRjd5MHVMaUFDVnBpV0pYYnhNYWl1ak1aTmN0RFAzY3ZXZHhUUTU2d0wtdXBfdnFzOFVBdFVFazAwN0JoSFlSX1NOQzRYMXhaamU5MzItbmFBMVFVZmxsQlp3Tmk2a2R4N2VnQWM3X29pYXhoMDlFS2QwVHRPMlF1cUtKU1JQbnJtSUh5dEJvczlPNlE?oc=5",
@@ -395,10 +403,26 @@
    "tag": "sta"
   },
   {
+   "titulo": "Premios Produ obsequia a \"El Día menos Pensado\" un árbol en el Amazonas",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVkdCTGxvTUpNQXEyU0ttYl9xalZYSnVOTDVwSS01dVVvTlJrcGZNeFl4bmRQSVdRUWtGajlVMno5M1ZOV1pZM3FyV3lrdU85U0FYODVQUm1UNDdLdnFEN3liUlJyNXpEWUJrTTVwZTdqMDhZVy1uMU8wVGlKVW9rQ3BtdEowaGVRNWExZDhTUWNiVGRZSGxQMkhkN0U2WmNn0gGmAUFVX3lxTE5waU9KOGt2a3pyMWxIQ19zLWo4YUd6RTExc2NGd3k5MlR1LWN6TWJmaUVITTlzU1ozNVl2cmozQklKV1BoakJjRmFrSFVQaThqYTBLN1FsYS0tZ2RNQUpYeXZQOU9GYlZ4UWc1MWZCVlo5Zld5c0xhb1ItTVFxMmZiSGZuNzVyc1JrS09MVHplbFNuMGVkTjZuVjg0YktVdkgxS2wybFE?oc=5",
+   "fuente": "TVN",
+   "fecha": "2024-12-18T08:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
    "titulo": "Billetera digital dale! contribuye a la sostenibilidad y bancarización en Colombia",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTlRvYzV4U19ZUE5iMGRnRWM0ZFM5YW9jemIyUER0YlhQdFVYVUVCQnBaRlN1cTZZUkgxcHpuTG5ha1A0Nnd4NkNpVnRZUXktWkVOSzEzeGdXY3FDNkd4Wmh3bHVqX0JRYlFHeGRuVFpOWllxUUJxTWJfQm4wV1Y5ekU5US10OTNfVlVxYUMxMUpfcXUwdC1UWHdZT2QwT19WZ2ltdUZjdUhob0HSAbABQVVfeXFMUGREbnkyNlhwUThJRzc1blBadFVZaHQyd0g5RlN3UzBZTkJOMVlfWklkaExVX0wwY09yOVA3NkVQVlpibnpET255QjNsS0dVU3ZwUmNPWXlvX2JzTlJ2aU5yRXE1Ym9NcnZSc3NTV04wcmhEWXVUREVZbFEyT1BNcmpRUFAwdF8ycHlxVDc0REFJUGNfR2pteW03NjhGNGh2RWtKd0RVRlNQQTdkSWdMUlY?oc=5",
    "fuente": "Portafolio.co",
    "fecha": "2024-11-28T08:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Emma y el jaguar negro, una aventura para toda la familia",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9BUTRCbkRKc2R1Sjl4MjJmakZ0dkx3NEtHR0U3ZmhBNDFSYkNObTZnQWlZaGFPMEdzX0VLVVRidm5KWTd0emJGaFJlNWVRLVRBOWtteTJKMVVIZG1STEc4WnVrR3NRdnpFZENWZGtDX3lVYUxSRmNz?oc=5",
+   "fuente": "Sapos y Princesas",
+   "fecha": "2024-11-05T08:00:00.000Z",
    "lang": "es",
    "tag": "sta"
   },
@@ -455,6 +479,14 @@
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVWluLTNGdWM1TWdVdXZLSE5GTEpkYUttaWRFWHh4R2tOSlZhcWdWa2pROXFPTEI4NlFMNEI3bEU4UTZRNl9JTmg5cjJ0VXQzaVJVcFBxRFdPSDRLRE1iUW1oc3FxTGVLT0tnLWJOSVZFcmduWklGMmlLMzhaWGtjUEpxMWk3U1NPSmNILUU2cDROXzd5RmxNckxXUnVYQkVpV1BwMFRqbnNXUmhIaGROOWpNeWFjNzlNRDN0ZDBjbnY1cmJ6ZlI2SzJrcnhvckFYbV9yRmFsUHY?oc=5",
    "fuente": "produ",
    "fecha": "2024-04-22T07:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Emma Y El Jaguar Negro: Una Película Familiar Con Mensaje Medioambiental",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM241RDh6NllGYTNscHlQVDUxaTJTQ1NBc1ViRzg4NEJLMW9paDFRNlR3WDg0bHR6TkxQVTBSck9xOTFpNXJjZGhuWWc0andQbXBzZWN4QnhOTUkxc3Fkek5SYnNqZjljdVdEOWNwYkFqdnQyQnljNlJmTVM2R2xDQ09iNWNsRXR4ZGFFMmROUEFSQTEySmg1dFlqQXRlODlxZGFXYkVoMmJzY1RsQWhudWlB?oc=5",
+   "fuente": "Hacer Familia",
+   "fecha": "2024-04-12T07:00:00.000Z",
    "lang": "es",
    "tag": "sta"
   },
@@ -579,6 +611,14 @@
    "tag": "sta"
   },
   {
+   "titulo": "Este celular fue hecho con botellas de plástico extraídas del Océano Índico",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUFJqalc0V1FsTmw2SjcxcVRHWS1nQ1lnQzdJVm16enFNUUVRczNJSU93WUJzWU9VTV9wdjl6Tk5YLUJNNi1oUVlOZktiREIzamE1OUg5LXZOR05WSFMyZWZtekVFa2JmTEktWjlrZmNfd1ExbnFCU0NsNC11eWRsbjRMdDFZZGFUUDd4ZzlLMmJVNlI3WllBc0VLQ2YtSG9uZk1XTlVpa2pvbGZHV3pGZVJWQWtxY0hk0gHTAUFVX3lxTE00NVU4djFEY2FleTZ3alpTcVNuMEt3a2w2bEtfb0hLUEt4VjcwMFhkUi11MlZsTHRzWlFtYjJ2QXhkOEFValdPd2pXWVBScEJGTDB1eUcxd05Na2hpbXV5elR0c1FoaThMVjhNelZGNmt3eXI2VkVJdHhqeGZ5OXE2QjhCellPZ2hIWXB5aTAtT2tkVFdJTWxMb1pZZ0FLNU9iVWxiWlc0c1FGT3hDV081cWhFSXg4aUxyOUFaV0FyUWdFR3NCMGJPRWcxWGJUeGh1RUk?oc=5",
+   "fuente": "Infobae",
+   "fecha": "2023-02-22T08:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
    "titulo": "Samsung Colombia, comprometido con la reforestación del Amazonas",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX05TT3hTbUh0Zl9kcG1Dc0NIWklhRUstQ2xzWVpGX3NYV3V1SVllV2VQXzJmMXk2bHNzc01mWjI5Njk3dmpJWjBhMWlvUGpoUDhaU0NQWmVYWDl1NWZaTTJVNVVvTUU5SlYyYmxhdGk1MGVXcUZFQkRhV2Y3VUlMYy1fQmxLZnZjOXBKRUdNYV9lQ0lfV1E?oc=5",
    "fuente": "samsung.com",
@@ -606,6 +646,14 @@
    "titulo": "Plantarán más de 10,000 árboles en la Amazonía de Brasil en lucha climática",
    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5EOXRYUy1RbVlzeVVXTzhCWWdJbXQ1THl4TkxWd1RneEJ6NzV4NDdtMndhT0VvVkRhTUFpd3NVWE44cDhRaldaQQ?oc=5",
    "fuente": "Periódico elDinero",
+   "fecha": "2023-01-05T08:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Organizaciones plantarán 10 000 árboles en Amazonía de Brasil",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZHNIVVhra1hScUdhbC1ha2RMWlZhUjEtZlZWbGFzUlFMNTZXcHpsTl9WRzQxSWFHa2M3ODdkdGVsRWZDalhYMUF4czdoeXpmdklKY0IzaU90Nzg4TzAzdVZlVnE3RVd5WE93VmhMN2kybkJYaXJKN0dkYjgyX0pIRXBmT3REemY2S1JtbFZOU3FDZ0hiTURHdg?oc=5",
+   "fuente": "El Comercio",
    "fecha": "2023-01-05T08:00:00.000Z",
    "lang": "es",
    "tag": "sta"
@@ -719,6 +767,14 @@
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcDFhdGFEbk0xYzhta3Z2RWFtQi0yWUVENm1wT3FoTVRSeEg0c3M1UFo5OUhpRG80alF1NlRjcE44NEFDRGJGLUh6cl9DWHctVzNCY1hyTV9YLTBYc25NR3lNalZSWUphUm94UUZoNzhfRkVfMUFwTjZnalYzZTVTeVh2bWFkd3RZdHNFcHRrZklEWDVKemg5QVB2Q3NXZVdwN2xzX25QTGllQ2Y1bDdwbGhtclNTS1BhT195bmxMQ0ZTc1FpUmdiMlhJSdIBywFBVV95cUxPQlA4VFZxZVFEOE1lX2lZamlrWGEyVmtHMUp1a3BacGtBUzlHbGJ1VGo2UTJRLUh3bm8wZWVNYWxQOXBvY2dpSXVDbW91SjBFTEtGanY0SzF1Szh0d2dXM3F0ZFd5dkgxTkJTbHJuQWJFSHBSdGdQdkZ2UzkyamY1VDRsTGRwRjJadWdDOGVJNGh6b1l1UXpiUmpPbmMzUnlMNC1rSjBMaHVUMTRtMkFtZTRUdEhZczJUWDAwQmMxSTVhMlNZRHo4Nkd4MA?oc=5",
    "fuente": "LaRepublica.co",
    "fecha": "2021-07-07T07:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Banco de Bogotá lanza la primera tarjeta verde del país",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLTBGQ3VETGUtRUxKOVlmRkVwRG5sWFNFeDRMaFZGazIxbmM3TlFiLWpFbzMydWs3TEg2eU1wdWpPMFdPaUZhLXpINVdMUE1makZlSU5TbXRTeU53a0VwSmQyZXhDWEZlQzUxQngyZ2FFTlJFWGM5a1FjRzNzWDZsMFhuVUNkWnRoQ19EeHA2RDFST19yMUsydEhEQ0bSAbABQVVfeXFMT3YxNENyczVrZUxMWXpDRDBoYTBFZjFodFNyYzlTZGxxYjlybGFlZE9aQjk4c0Z0WVNweWpVdTFjM29wc3VHdk56MERWT0xlOVNfbTFxS1g1bFNYWGlfVzhYWTdVTzNhQS1VN3VhMDFiSmFZY3RScFRuOXhnRjBkUWhlYV82WDNhMjN0dy1hUDR6aUJGenlzS1lMcUFMM2I3QmdQWkI2bXNCVTZILUpFTTk?oc=5",
+   "fuente": "El Espectador",
+   "fecha": "2021-07-01T07:00:00.000Z",
    "lang": "es",
    "tag": "sta"
   },
@@ -843,10 +899,26 @@
    "tag": "sta"
   },
   {
+   "titulo": "Deforestación de la selva amazónica se duplicó en el 2017 en Colombia",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdDVxRDlEbWVpcE8yZk9WNDFtTVVYZWZKS1VjMWYza2hOQlhsNGl3OHk1bTAwaHNEcUNnTkwxNE04TTBLZVdiVHExdi1PcFdmZVNIYUFrdlkwMTFnYlZUNWxOQmJiUm9WYWI4M1RndFZfc0JOUmEtVkxVNmN6bDhJWlFaUGVfZThDQU5FMmU3TW5qaHl1Nzd1TEdYbFVzeU9pdHFEVW10VXFpZFNuTTU40gG0AUFVX3lxTFBVQlp3b2s2VEhwclo4UFdxRGxXbWdoaUFDNWhuVjFCRWY4NTF5OTQtc2dfbS1MTm5HRmlOODRzb2tsdDdOMzk0eEdoczRCM3c0M2lXSzA0cXU5Y25lb3FIanJEbG5VV3h0QlF3dmVCV0pJV3J1anFHRHRmX0JkYTg5a2liUnowODVzUERieXJNR1NyOE5FR0w3Z1N3SHM5UTRIVEliR2lqbTQyNllSbE02UmxtZg?oc=5",
+   "fuente": "Canal 1 En vivo",
+   "fecha": "2018-10-12T07:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
    "titulo": "Bosque de Paz será plantado en Vaupés, Amazonas",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeGdiUEY3UlhmazAzcm1jTmhEYmpmMEgwaFFOZU5PZExkNGZ3T3JJTVB2czRqZHFqMU5nTnlsOUNfR2tLR080bFBpNUNwcjRwNmFwQW1fSFV0SXlEeXh2UnRqWm1XWjFyeXRMX2MzaTZCcmVXWWx0UExQTTNGQWQ0QXRRWjI1ZDJ0RVEwYmtJTQ?oc=5",
    "fuente": "InfoAmazonia",
    "fecha": "2018-01-23T08:00:00.000Z",
+   "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "ONG promueve campaña en línea para reforestar la Amazonía colombiana",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNDg4Q29mckdzX2xMXzd2RFJBdEFycnhJRzZfeW5wYThibVFzTEx4NGR6ckFScXB4Nk52M04zN1Mtal9IMmc0QlhXbDZ2Q0tHNzc3b1laZGU4cDVHa0hZZEZFQWtsMWJDLWpYbENtZnR1cl92WnAyeDEyMTludEpHQzBoTnVsY0tKdUVNa2JibVlPQWJJMHFLRk4wRmR0WUFaTkI1eXBLNkh1dGtxZ0E0YWV1aU7SAboBQVVfeXFMTjFyTU5BeThkZzhSTldiTzZmbURMd3FEcWVtOEVuQ3B5NTJWX01nWDRDLXNzMWNWcmxOejAxWmpzUDh5OXVuRjE1NndMUjlSU3M1cFFRbHlpTEtjbmxjd2dQQlBIWTgteFRSVnFIWkJfbUlXbEFDanVRYzkxVVE3TmM2ampnMnBFMDJIQmU1NnppM1Nwd1hwZTZITGt6REtyWmI5RnhWNjlTWmUyUkxLR1YtV05seHd5UG93?oc=5",
+   "fuente": "www.ecotvpanama.com",
+   "fecha": "2016-04-28T07:00:00.000Z",
    "lang": "es",
    "tag": "sta"
   },
