@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26T01:52:52.868Z",
+ "actualizado": "2026-11-26T10:11:28.519Z",
  "cifras": {
   "arboles": 914273,
   "mangles": 10000,
@@ -912,6 +912,14 @@
    "fuente": "InfoAmazonia",
    "fecha": "2018-01-23T08:00:00.000Z",
    "lang": "es",
+   "tag": "sta"
+  },
+  {
+   "titulo": "Colombia Guerrilla Conflict: More Than 8 Million Victims",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAxdFRLWXVVazZHNGxBUWZVNjA3TXllUEFySl90OC1ueXZSWXZDVldwb0hJTGZKckdTeDI0dWxBZ3ptMG8tOXdYVzJYNGpyN1R4N2E2M3hzRXFKUzU2d0pxSTdSRFprZVNkNFJyMGNlNHdTTUl0NFdmU1NNUQ?oc=5",
+   "fuente": "Costa Rica Star News",
+   "fecha": "2016-08-21T01:26:03.000Z",
+   "lang": "en",
    "tag": "sta"
   },
   {
